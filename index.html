@@ -17,16 +17,20 @@
     <h2>Cataratas do Iguaçu</h2>
     <p>Um excelente ponto turístico em Ponta Grossa</p>
 </div>
-<button id="botao">Alternar</button>
+
   <script>
      cartao1 = document.getElementById("card1");
      cartao2 = document.getElementById("card2");
-     botao = document.getElementById("botao");
-
-     botao.addEvenListener("click", ()=>{
+     
+     cartao1.addEventListener("click", ()=>{
           cartao1.classList.toggle("desligar");
           cartao2.classList.toggle("desligar");
     })
-</script>
+
+     cartao2.addEventListener("click", ()=>{
+          cartao1.classList.toggle("desligar");
+          cartao2.classList.toggle("desligar");
+    })
+   </script>
 </body>
 </html>
